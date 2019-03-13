@@ -49,7 +49,7 @@ There is only one requirement for the preprocessing.<br><br>
 <H2>Original version</H2>
 
 This version of the heterogeneity detection method was created to simplify preprocessing requirements and increase the stability of the method. You may find the original version by the link below.<br>
-[link]<br>
+https://github.com/VisionAI-USF/TextureHeterogeneityDetection<br>
 
 <H2>Example Code</H2>
 
