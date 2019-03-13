@@ -24,13 +24,11 @@ p_idx = 1;
 
 patch_size = 12;
 
-c_map = generate_coordinate_map(size(img));
-%np = 0;
 for j=1:length(row)
 
     x = col(j);
     y = row(j);
-    [patch, patch_mask, coords] = get_mask(img, mask, c_map, x, y);
+    [patch, patch_mask, coords] = get_mask(img, mask, x, y);
 
     if sum(sum(patch_mask))>0
 %             np=np+1;
@@ -113,7 +111,7 @@ end
 
 
 
-function [patch, patch_mask,coords] = get_mask(img, mask,c_map, x, y)
+function [patch, patch_mask,coords] = get_mask(img, mask, x, y)
     y_min = (y-15);
     y_max = (y+16);
     x_min = (x-15);
