@@ -79,6 +79,20 @@ hV = [-1,0,1];
 [habitats, features] = compute_features( img, mask, hV );
 
 ```
+
+After execution the code above you should get following resuls:
+
+```
+habitats = 14x512x512 double
+
+features = 
+           num_clusters: 14
+            fingerprint: [14×9 double]
+             q_features: [1×1 struct]
+    centroids_mean_dist: 75.5132
+     centroids_std_dist: 39.2991
+```
+
 If you are running Matlab at graphical operating system, then you can plot input data and resulting habitat map using following code.
 ```
 show_habitats(habitats);title('Habitat map');
