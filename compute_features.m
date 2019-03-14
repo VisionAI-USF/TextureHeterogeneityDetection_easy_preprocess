@@ -6,7 +6,7 @@ function [habitats, features] = compute_features(img, mask, hV, varargin)
     [tex_features, coords] = nodule_texture_features( img, mask, options );
     
     
-    if size(tex_features{1},1)~=sum(sum(mask>1))
+    if size(tex_features{1},1)~=sum(sum(mask>0))
         error('# of texture feature mismatch with # of pixels in the mask');
     end
     
