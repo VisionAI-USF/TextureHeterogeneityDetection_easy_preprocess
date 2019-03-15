@@ -12,7 +12,7 @@ align = options.align;                                                        % 
 complexType = options.complexType;                                              % 'abs' is recommended if align = 0. 'concatenated' should be used otherwise
 cropSupport = options.cropSupport;                                                  % crop the mask based on the spatial support of the wavelet to avoid the influence of surrounding objects
 locatoins = [];
-nodule_feature = {};
+nodule_feature = [];
 mask_bool = mask>0;
 patches_ready = 0;
 
@@ -73,7 +73,7 @@ end
 
 
 patches_ready = 1;
-nodule_feature{1} =features;
+nodule_feature = features;
 
 end
 
