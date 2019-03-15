@@ -2,16 +2,17 @@
 We present an approach of Spatial Heterogeneity, i.e., Habitats, detection using texture information. First, we compute circular harmonic wavelets for small patches within a Region of Interest (RoI). Second, we cluster patches in order to define the sub-regions of an image with similar texture patterns (habitats). Finally, information about resulting clusters and their texture signatures is presented as habitat descriptors.
 
 <H2>Introduction</H2><br>
-This version of code is modification of methods from a project which results are published in the paper: "Revealing Tumor Habitats from Texture Heterogeneity Analysis for Classification of Lung Cancer Malignancy and Aggressiveness". Please, see the original paper for details:<br>
-TBA
+This version of code is modification of methods from a project which results are published in the paper: "Revealing Tumor Habitats from Texture Heterogeneity Analysis for Classification of Lung Cancer Malignancy and Aggressiveness". The paper is in open access and can be found here: <br>
+https://www.nature.com/articles/s41598-019-38831-0<br>
 
 
 <H2>Input Arguments</H2><br>
 There are three input variables. The first one is a 2D image. The second one is a mask (RoI) for the input image. The third one is Harmonic Vector description.<br><br>
 1.  <i>"img"</i>: The Source 2D image. There are no requirements for pixel value range or type.<br><br>
 2.  <i>"mask"</i>: An RoI for the source image. It has to have the same resolution as the input image. Non-zero elements represent an RoI where heterogeneity should be evaluated.<br><br>
-3.  <i>"hV"</i>: The Harmonic Vector (hV) represents the complexity and number of texture features. All texture computations are done in Fourier space, so you may think about hV as a representative of convolution kernels. The simplest texture description represented by 0. Next is -1 and 1 and so on. Thus, you can set hV to (0), (-1, 0), (-1, 0, 1), ..., (-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5) and so on. For more details see papers in the introduction section.<br>
-
+3.  <i>"hV"</i>: The Harmonic Vector (hV) represents the complexity and number of texture features. All texture computations are done in Fourier space, so you may think about hV as a representative of convolution kernels. The simplest texture description represented by 0. Next is -1 and 1 and so on. Thus, you can set hV to (0), (-1, 0), (-1, 0, 1), ..., (-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5) and so on. <br><br>
+Deteiled description of texture computation can be found in the following paper:<br>
+<i>Depeursinge, A., Puspoki, Z., Ward, J.-P. & Unser, M. Steerable Wavelet Machines (SWM): Learning Moving Frames for Texture Classification. IEEE Transactions on Image Process. 26, 1626–1636 (2017)</i><br>
 
 
 <H2>Output Arguments</H2><br>
