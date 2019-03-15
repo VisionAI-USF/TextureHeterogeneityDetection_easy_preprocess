@@ -84,14 +84,14 @@ hV = [-1,0,1];
 After execution the code above you should get following resuls:
 
 ```
-habitats = 14x512x512 double
+habitats = 15x512x512 double
 
 features = 
-           num_clusters: 14
-            fingerprint: [14×9 double]
+           num_clusters: 15
+            fingerprint: [15×9 double]
              q_features: [1×1 struct]
-    centroids_mean_dist: 75.5132
-     centroids_std_dist: 39.2991
+    centroids_mean_dist: 66.0818
+     centroids_std_dist: 34.6537
 ```
 
 If you are running Matlab at graphical operating system, then you can plot input data and resulting habitat map using following code.
