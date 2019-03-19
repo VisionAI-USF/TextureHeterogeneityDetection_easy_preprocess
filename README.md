@@ -111,7 +111,7 @@ Line 21 at <i>workflow/cluster_texture.m</i><br>
 
 <H2>References</b></H2>
 If you are going to use it, please, use the reference:<br>
-Cherezov, D., Goldgof, D., Hall, L., Gillies, R., Schabath, M., Müller, H. and Depeursinge, A., 2019. Revealing Tumor Habitats from Texture Heterogeneity Analysis for Classification of Lung Cancer Malignancy and Aggressiveness. Scientific Reports, 9(1), p.4500.
+<i>Cherezov, D., Goldgof, D., Hall, L., Gillies, R., Schabath, M., Müller, H. and Depeursinge, A., 2019. Revealing Tumor Habitats from Texture Heterogeneity Analysis for Classification of Lung Cancer Malignancy and Aggressiveness. Scientific Reports, 9(1), p.4500.</i>
 
 <H2>Questions</b></H2>
 
