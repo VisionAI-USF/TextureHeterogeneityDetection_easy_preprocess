@@ -1,6 +1,5 @@
 function [ ] = show_habitats( habitats )
 
-habitats = habitats{1};
 for j = 1:size(habitats,1)
     
     [cluster_num,row,col] = size(habitats);
